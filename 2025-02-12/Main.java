@@ -10,16 +10,15 @@ public class Main {
         cart.addProduct(p2);
         cart.addProduct(p3);
 
+        Tv samsung = new Tv("Samsung", 7200.0, 12);
+        Stove lux = new Stove("Lux", 4200, 5);
+        Refrigerator miau = new Refrigerator("Miau", 1200, 2);
+
+        cart.addProduct(miau);
+        cart.addProduct(lux);
+        cart.addProduct(samsung);
+
         System.out.println(cart.getContents());
 
-        System.out.println("Número de itens no carrinho: " + cart.getItemCount());
-        System.out.println("Valor total da compra: R$ " + cart.getTotalPrice());
-
-        cart.removeProduct(p2);
-
-        System.out.println("\nApós remover o Mouse:");
-        System.out.println(cart.getContents());
-        System.out.println("Número de itens no carrinho: " + cart.getItemCount());
-        System.out.println("Valor total da compra: R$ " + cart.getTotalPrice());
     }
 }
